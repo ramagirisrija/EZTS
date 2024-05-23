@@ -1,0 +1,47 @@
+package basic;
+import java.util.*;
+public class third {
+
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int age,n;
+	float tax=0;
+	System.out.println("Enter age:");
+	age=sc.nextInt();
+	System.out.println("Enter income:");
+	n=sc.nextInt();
+	if(age>60) {
+		if(n<=300000) {
+			tax=0;
+		}
+		else if(n>=300001 && n<=500000 ) {
+		tax=0.05f * n;	
+		}
+		else if(n>=500001 && n<=2000000) {
+			tax=0.10f*n;
+		}
+		else {
+			tax=0.20f*n;
+		}
+		
+		
+	}
+	else {
+		if (n <= 250000) {
+            tax = 0;
+        } else if (n >= 250001 && n <= 500000) {
+            tax = 0.05f * n;
+        } else if (n >= 500001 && n <= 1000000) {
+            tax= 0.10f * n;
+        } else if (n >= 1000001 && n<=3000000) {
+            tax =0.20f * n;
+        }
+        else {
+        	tax=0.30f*n;
+        }
+	}
+	System.out.println("Tax is:"+tax);
+	
+	}
+
+}

@@ -1,0 +1,22 @@
+package basic;
+import java.util.*;
+public class first {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in); 
+		double bs,da,ta,gs;
+	    System.out.print("enter basic salary:");
+	    bs=sc.nextDouble();
+	    if(bs>=10000) {
+	    	da=bs*0.40;
+	    	ta=bs*0.30;
+	    }
+	    else {
+	    	da=bs*0.30;
+	    	ta=bs*0.20;
+	    }
+	    gs=bs+ta+da;
+	    System.out.println("Gross salary:"+gs);
+	 }
+
+}
